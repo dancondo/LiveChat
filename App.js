@@ -1,5 +1,6 @@
 import React from 'react';
-import { Container } from 'native-base';
+import { Container,Content } from 'native-base';
+import AppFooter from './components/AppFooter'
 import AppHeader from './components/AppHeader';
 
 export default class App extends React.Component {
@@ -23,6 +24,9 @@ export default class App extends React.Component {
     return (
       <Container>
         <AppHeader />
+        <Content>
+        </Content>
+        <AppFooter />
       </Container>
     );
   }
