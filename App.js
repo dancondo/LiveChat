@@ -1,21 +1,27 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { Container, Header, Content, Card, CardItem, Body, Text } from 'native-base';
 
 export default class App extends React.Component {
   render() {
     return (
-      <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
-      </View>
+      <Container>
+        <Header />
+        <Content>
+          <Card>
+            <CardItem bordered>
+              <Body>
+                <Text>
+                  NativeBase is a free and open source framework that enable
+                  developers to build
+                  high-quality mobile apps using React Native iOS and Android
+                  apps
+                  with a fusion of ES6.
+                </Text>
+              </Body>
+            </CardItem>
+          </Card>
+        </Content>
+      </Container>
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
